@@ -1,20 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card'
 import { NavigatorComponent } from './navigator/navigator.component';
+import { DataListComponent } from './data-list/data-list.component';
 
 
 
 @NgModule({
   declarations: [
-    NavigatorComponent
+    NavigatorComponent,
+    DataListComponent
   ],
   imports: [
     CommonModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   exports: [
-    NavigatorComponent
+    NavigatorComponent,
+    DataListComponent
   ]
 })
 export class ComponentsModule { }
