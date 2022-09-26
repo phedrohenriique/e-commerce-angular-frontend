@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {MatButtonModule} from '@angular/material/button';
 import { NavigatorComponent } from './navigator/navigator.component';
 
 
@@ -9,7 +10,8 @@ import { NavigatorComponent } from './navigator/navigator.component';
     NavigatorComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatButtonModule
   ],
   exports: [
     NavigatorComponent

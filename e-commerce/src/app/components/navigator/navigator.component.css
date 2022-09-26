@@ -1,0 +1,14 @@
+.navigator-main-div {
+    color: var(--text-color);
+    background-color: var(--navigator-background);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 10%;
+    width: 100%;
+}
+
+.options-div {
+    padding: 0.5em;
+}
