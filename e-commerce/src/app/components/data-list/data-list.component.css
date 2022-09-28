@@ -1,0 +1,9 @@
+.list-main-div {
+    min-width: 30vw;
+}
+
+.list-main-div:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+}

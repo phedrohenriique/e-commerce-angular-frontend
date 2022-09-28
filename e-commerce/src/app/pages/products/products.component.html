@@ -1,0 +1,21 @@
+<div class="products-main-div">
+    <div class="products-navigator-div">
+        <h1>Product</h1>
+        <div>
+            <app-search-input>
+            </app-search-input>
+        </div>
+        <app-basic-button>
+            Add
+        </app-basic-button>
+    </div>
+    <div class="products-list-div">
+        <app-data-list *ngFor="let product of this.products()">
+            <!-- <div *ngFor="let product of this.products()">{{product.id}}</div> -->
+            {{product.id}}
+        </app-data-list>
+    </div>
+    <div>
+
+    </div>
+</div>

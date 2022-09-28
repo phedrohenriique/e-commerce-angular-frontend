@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
+* {
+    color: white;
+}
+
+
 html,
 body {
     height: 100%;
@@ -14,4 +19,5 @@ body {
 :root {
     --navigator-background: #6A1B9A;
     --text-color: white;
+    --hover-color: #42424250;
 }

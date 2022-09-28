@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { ComponentsModule } from '../components/components.module';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    ProductsComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +18,8 @@ import { ErrorComponent } from './error/error.component';
   ],
   exports: [
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    ProductsComponent
   ]
 })
 export class PagesModule { }

@@ -6,7 +6,27 @@ import { HttpClientModule } from '@angular/common/http';
 })
 export class DatabaseService {
 
-  constructor(http: HttpClientModule) {
+  dataList: Array<{ id: string, product_name: string, price_un: number, qty: number }> = [
+    {
+      id: "01",
+      product_name: "product_1",
+      price_un: 200,
+      qty: 10
+    },
+    {
+      id: "02",
+      product_name: "product_2",
+      price_un: 500,
+      qty: 5
+    }
+  ]
+
+  constructor(private http: HttpClientModule) {
 
   }
+
+  databaseProducts() {
+    return this.dataList
+  }
+
 }
